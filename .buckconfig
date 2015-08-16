@@ -5,6 +5,7 @@
   cpp2_library = //external:thrift
   cpp_reflection_library = //external:thrift
   cpp_frozen_library = //external:thrift
+  python_library = //external:pythrift
 
 [cxx]
   cpp = /usr/bin/clang++
@@ -29,4 +30,8 @@
     -lboost_system \
     -lthrift \
     -lthriftcpp2
+
+[python]
+  interpreter = /usr/bin/python2.7
+  path_to_pex_executer = /bin/bash
 

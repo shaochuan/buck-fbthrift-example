@@ -5,3 +5,20 @@ prebuilt_native_library(
     'PUBLIC',
   ],
 )
+
+prebuilt_python_library(
+  name = 'pythrift',
+  binary_src = 'Thrift-0.1-py2.7-linux-x86_64.egg',
+  visibility = [
+    'PUBLIC',
+  ],
+)
+
+python_library(
+  name = 'six',
+  srcs = ['six.py'],
+  base_module = '',
+  visibility = [
+    'PUBLIC',
+  ],
+)

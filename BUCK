@@ -22,3 +22,13 @@ cxx_binary(
   ],
 )
 
+python_binary(
+  name = 'client',
+  main = 'client.py',
+  base_module = 'calculator',
+  deps = [
+    '//calculator/if:if#py',
+    '//external:six',
+    '//external:pythrift',
+  ],
+)
