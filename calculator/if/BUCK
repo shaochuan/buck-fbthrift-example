@@ -1,0 +1,13 @@
+thrift_library(
+  name = 'if',
+  srcs = {
+    'calculator.thrift' : [],
+  },
+  cpp2_options = [
+    'optionals',
+  ],
+  visibility = [
+    'PUBLIC',
+  ],
+)
+

@@ -1,0 +1,7 @@
+prebuilt_native_library(
+  name = 'thrift',
+  native_libs = 'libs',
+  visibility = [
+    'PUBLIC',
+  ],
+)
