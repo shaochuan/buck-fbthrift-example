@@ -1,0 +1,24 @@
+[thrift]
+  compiler = /usr/local/bin/thrift
+  compiler2 = /usr/local/bin/fbthrift
+  cpp_library = //external:thrift
+  cpp2_library = //external:thrift
+  cpp_reflection_library = //external:thrift
+
+[cxx]
+  cpp = /usr/bin/clang++
+  cppflags = \
+    -std=c++11
+  cc = /usr/bin/clang
+  cflags = \
+    -std=c++11
+  cxxpp = /usr/bin/clang++
+  cxxppflags = \
+    -std=c++11
+  cxx = /usr/bin/clang++
+  cxxflags = \
+    -std=c++11 \
+    -Wall \
+    -Wno-unused
+  ld = /usr/bin/clang++
+
