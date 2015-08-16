@@ -7,7 +7,6 @@ cxx_library(
   deps = [
     '//calculator/if:if#cpp2',
   ],
-  force_static = True,
 )
 
 cxx_binary(

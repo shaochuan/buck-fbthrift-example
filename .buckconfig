@@ -4,6 +4,7 @@
   cpp_library = //external:thrift
   cpp2_library = //external:thrift
   cpp_reflection_library = //external:thrift
+  cpp_frozen_library = //external:thrift
 
 [cxx]
   cpp = /usr/bin/clang++

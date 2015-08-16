@@ -1,10 +1,14 @@
 thrift_library(
   name = 'if',
   srcs = {
-    'calculator.thrift' : [],
+    'calculator.thrift' : [
+      'Calculator',
+    ],
   },
   cpp2_options = [
     'optionals',
+    'terse_writes',
+    'frozen2',
   ],
   visibility = [
     'PUBLIC',

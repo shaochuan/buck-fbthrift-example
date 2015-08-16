@@ -1,9 +1,10 @@
-#include "calculator/if/Calculator.h"
+
+#include "calculator/if/gen-cpp2/Calculator.h"
 
 using namespace std;
 using namespace apache::thrift;
 
-class CalculatorSvc : public CalculatorSvIf {
+class CalculatorSvc : public cpp2::CalculatorSvIf {
  public:
   virtual ~CalculatorSvc() {}
   void async_tm_add(
