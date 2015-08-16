@@ -22,4 +22,11 @@
     -Wall \
     -Wno-unused
   ld = /usr/bin/clang++
+  ldflags = \
+    -pthread \
+    -lglog \
+    -lfolly \
+    -lboost_system \
+    -lthrift \
+    -lthriftcpp2
 

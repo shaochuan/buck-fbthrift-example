@@ -1,8 +1,11 @@
 
 cxx_library(
-  name = 'calculator_server',
+  name = 'calculator_service',
   srcs = [
-    'CalculatorServer.cpp',
+    'CalculatorService.cpp',
+  ],
+  exported_headers = [
+    'CalculatorService.h',
   ],
   deps = [
     '//calculator/if:if#cpp2',
@@ -12,10 +15,10 @@ cxx_library(
 cxx_binary(
   name = 'main',
   srcs = [
-    'main.cpp',
+    'Main.cpp',
   ],
   deps = [
-    ':calculator_server',
+    ':calculator_service',
   ],
 )
 
